@@ -1,3 +1,27 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+	<ffimageloading.cross.MvxCachedImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+		android:layout_gravity="center_horizontal"
+        local:MvxBind="ImagePath Url" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:gravity="center_horizontal"
+		android:textSize="16sp"
+		android:textAlignment="center"
+	    android:text="Character Name" />
+	<TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+		android:textSize="20sp"
+		android:textStyle="bold"
+        android:textAlignment="center"
+        local:MvxBind="Text CurrentCharacter.Name" />
 </LinearLayout>

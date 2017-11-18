@@ -6,5 +6,7 @@ namespace NowyOssus
         public MyClass()
         {
         }
+
+        public string Hello { get; set; } = "Hello Cross Plaftorm";
     }
 }

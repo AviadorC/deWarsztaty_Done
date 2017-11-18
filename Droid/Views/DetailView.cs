@@ -10,16 +10,17 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using MvvmCross.Droid.Views;
 
 namespace NowyOssus.Droid.Views
 {
     [Activity(Label = "DetailView")]
-    public class DetailView : Activity
+    public class DetailView : MvxActivity
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-
+            SetContentView(Resource.Layout.DetailView);
             // Create your application here
         }
     }
